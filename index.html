@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card con Gradiente de Luz</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <section class="card_container"></section>
+    </div>
+    <template id="card-template">
+      <article class="card">
+        <div class="card__description">
+          <p class="card__description-name"></p>
+          <span class="card__description-count"></span>
+        </div>
+        <div class="card__icon">
+          <img class="card__pentagon" src="./assets/polygon.svg" alt="" />
+          <span class="card__emoji"></span>
+        </div>
+      </article>
+    </template>
+    <script src="./js/render.js"></script>
+  </body>
+</html>

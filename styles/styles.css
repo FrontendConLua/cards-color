@@ -1,0 +1,74 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+
+
+body{
+    background-color: #1B1B1B;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+
+}
+.main{
+   display: flex;
+   height: 100dvh;
+   justify-content: center;
+   align-items: center;
+   padding: 0 1rem;
+}
+.card_container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr));
+    width: 100%;
+    max-width: 504px;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 3px 6px rgba(0, 0, 0, 0.25);  
+    border-radius: 1rem;
+    background: radial-gradient(at top right, #88E7FD 0%, #086478 100%);
+    height: 104px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+.card__description {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem;
+}
+.card__description-name {
+    color: #ffffff;
+    margin: 0;
+}
+.card__description-count {
+    color: #ffffff;
+    margin: 0;
+}
+.card__icon {
+    position: absolute;
+    right: -1rem;
+    top: -.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    
+}
+.card__pentagon {
+    grid-area: 1/1;
+   
+}
+.card__emoji {
+    padding:0 0 1rem 1rem;
+    display: flex;
+    align-items: flex-end;
+    grid-area: 1/1;
+    font-size: .875rem;
+}
